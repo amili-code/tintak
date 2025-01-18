@@ -254,7 +254,7 @@
               <h3 class="widget-title">Search</h3>
               <form action="">
                 <input type="text">
-                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+                <!-- <button type="submit" title="Search"><i class="bi bi-search"></i></button> -->
               </form>
 
             </div>

@@ -13,6 +13,11 @@ function register_theme_menus() {
     ));
 }
 add_action('after_setup_theme', 'register_theme_menus');
+
+
+add_theme_support('post-thumbnails');
+
+
 ?>
 
 
