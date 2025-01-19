@@ -63,7 +63,7 @@
                     Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
                   </p>
 
-                </div><!-- End post content -->
+                </div>
 
                 <div class="meta-bottom">
                   <i class="bi bi-folder"></i>
@@ -77,14 +77,14 @@
                     <li><a href="#">Tips</a></li>
                     <li><a href="#">Marketing</a></li>
                   </ul>
-                </div><!-- End meta bottom -->
+                </div>
 
               </article>
 
             </div>
-          </section><!-- /Blog Details Section -->
+          </section>
 
-          <!-- Blog Author Section -->
+<!--           
           <section id="blog-author" class="blog-author section">
 
             <div class="container">
@@ -104,10 +104,10 @@
               </div>
             </div>
 
-          </section><!-- /Blog Author Section -->
+          </section> -->
 
-          <!-- Blog Comments Section -->
-          <section id="blog-comments" class="blog-comments section">
+          
+          <!-- <section id="blog-comments" class="blog-comments section">
 
             <div class="container">
 
@@ -125,7 +125,7 @@
                     </p>
                   </div>
                 </div>
-              </div><!-- End comment #1 -->
+              </div>
 
               <div id="comment-2" class="comment">
                 <div class="d-flex">
@@ -167,11 +167,11 @@
                       </div>
                     </div>
 
-                  </div><!-- End comment reply #2-->
+                  </div>
 
-                </div><!-- End comment reply #1-->
+                </div>
 
-              </div><!-- End comment #2-->
+              </div>
 
               <div id="comment-3" class="comment">
                 <div class="d-flex">
@@ -186,7 +186,7 @@
                   </div>
                 </div>
 
-              </div><!-- End comment #3 -->
+              </div>
 
               <div id="comment-4" class="comment">
                 <div class="d-flex">
@@ -200,14 +200,14 @@
                   </div>
                 </div>
 
-              </div><!-- End comment #4 -->
+              </div>
 
             </div>
 
-          </section><!-- /Blog Comments Section -->
+          </section> -->
 
        
-          <section id="comment-form" class="comment-form section">
+          <!-- <section id="comment-form" class="comment-form section">
             <div class="container">
 
               <form action="">
@@ -240,7 +240,7 @@
               </form>
 
             </div>
-          </section>
+          </section> -->
 
         </div>
 
@@ -251,7 +251,7 @@
             
             <div class="search-widget widget-item">
 
-              <h3 class="widget-title">Search</h3>
+              <h3 class="widget-title">جستجو</h3>
               <form action="">
                 <input type="text">
                 <!-- <button type="submit" title="Search"><i class="bi bi-search"></i></button> -->
@@ -259,7 +259,7 @@
 
             </div>
 
-            <div class="categories-widget widget-item">
+            <!-- <div class="categories-widget widget-item">
 
               <h3 class="widget-title">Categories</h3>
               <ul class="mt-3">
@@ -271,11 +271,11 @@
                 <li><a href="#">Educaion <span>(14)</span></a></li>
               </ul>
 
-            </div>
+            </div> -->
 
             <div class="recent-posts-widget widget-item">
 
-              <h3 class="widget-title">Recent Posts</h3>
+              <h3 class="widget-title">پست های پربازدید</h3>
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
@@ -316,7 +316,8 @@
                 </div>
               </div>
             </div>
-            <div class="tags-widget widget-item">
+
+            <!-- <div class="tags-widget widget-item">
 
               <h3 class="widget-title">Tags</h3>
               <ul>
@@ -333,7 +334,7 @@
                 <li><a href="#">Marketing</a></li>
               </ul>
 
-            </div>
+            </div> -->
 
           </div>
 

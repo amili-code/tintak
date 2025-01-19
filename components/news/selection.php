@@ -1,10 +1,10 @@
-  
-    <br>
+
   <div class="page-title">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
+    <div class="heading">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+              <br>
               <h1>اخبار تینتک</h1>
               <p class="mb-0">شما می تونین با این صفحه از ریز جزییات فعالیت های گروه مطلع و با خبر بشین</p>
             </div>
