@@ -6,83 +6,53 @@
 
           <!-- Blog Details Section -->
           <section id="blog-details" class="blog-details section">
-            <div class="container">
+    <div class="container">
+        <?php
+        // کوئری برای پر بازدیدترین پست
+        $args = [
+            'post_type' => 'post',
+            'meta_key' => 'view',
+            'orderby' => 'meta_value_num',
+            'order' => 'DESC',
+            'posts_per_page' => 1,
+        ];
+        $popular_query = new WP_Query($args);
 
-              <article class="article">
+        if ($popular_query->have_posts()) {
+            while ($popular_query->have_posts()) {
+                $popular_query->the_post();
+                $views = get_post_meta(get_the_ID(), 'view', true);
+                ?>
+                <article class="article">
+                  <h2 class="title"><?php the_title(); ?></h2>
+                    <div class="post-img">
+                        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php the_title(); ?>" class="img-fluid">
+                    </div>
 
-                <div class="post-img">
-                  <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                </div>
 
-                <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
+                    <div class="meta-top">
+                        <ul>
+                            <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="<?php the_permalink(); ?>"><time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo convert_gregorian_to_persian(get_the_date('Y-m-d')); ?></time></a></li>
+                        </ul>
+                    </div><!-- End meta top -->
 
-                <div class="meta-top">
-                  <ul>
-                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
-                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li>
-                  </ul>
-                </div><!-- End meta top -->
+                    <div class="content">
+                        <?php the_content(); ?>
+                    </div>
 
-                <div class="content">
-                  <p>
-                    Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                    Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-                  </p>
-
-                  <p>
-                    Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
-                  </p>
-
-                  <blockquote>
-                    <p>
-                      Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
-                    </p>
-                  </blockquote>
-
-                  <p>
-                    Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                    Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
-                    Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
-                  </p>
-
-                  <h3>Et quae iure vel ut odit alias.</h3>
-                  <p>
-                    Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
-                    Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
-                    Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
-                  </p>
-                  <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
-
-                  <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
-                  <p>
-                    Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
-                    Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
-                  </p>
-                  <p>
-                    Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
-                  </p>
-
-                </div>
-
-                <div class="meta-bottom">
-                  <i class="bi bi-folder"></i>
-                  <ul class="cats">
-                    <li><a href="#">Business</a></li>
-                  </ul>
-
-                  <i class="bi bi-tags"></i>
-                  <ul class="tags">
-                    <li><a href="#">Creative</a></li>
-                    <li><a href="#">Tips</a></li>
-                    <li><a href="#">Marketing</a></li>
-                  </ul>
-                </div>
-
-              </article>
-
-            </div>
-          </section>
+                    <div class="meta-bottom">
+                        <p>تعداد بازدید: <?php echo esc_html($views); ?></p>
+                    </div>
+                </article>
+                <?php
+            }
+            wp_reset_postdata();
+        } else {
+            echo '<p>هیچ پستی یافت نشد.</p>';
+        }
+        ?>
+    </div>
+</section>
 
 <!--           
           <section id="blog-author" class="blog-author section">
@@ -244,101 +214,55 @@
 
         </div>
 
-        <div class="col-lg-4 sidebar">
-
-          <div class="widgets-container">
-
-            
-            <div class="search-widget widget-item">
+       
+          <div class="col-lg-4 sidebar">
+            <div class="widgets-container">
+              <div class="search-widget widget-item">
 
               <h3 class="widget-title">جستجو</h3>
               <form action="">
                 <input type="text">
-                <!-- <button type="submit" title="Search"><i class="bi bi-search"></i></button> -->
+                <button type="submit" title="Search" style="right:85%"><i class="bi bi-search"></i></button>
               </form>
 
             </div>
+              <div class="recent-posts-widget widget-item">
+                <h3 class="widget-title">پست های پربازدید</h3>
+                <?php
+                // تنظیمات کوئری برای دریافت پست‌های دسته‌بندی "جلسات دورهمی"
+                $query_args = [
+                    'category_name' => 'جلسات-دورهمی', // نام دسته‌بندی به فارسی
+                    'meta_key'     => 'view', // کاستوم فیلد تعداد بازدید
+                    'orderby'      => 'meta_value_num',
+                    'order'        => 'DESC',
+                    'posts_per_page' => 5, // تعداد پست‌ها
+                ];
 
-            <!-- <div class="categories-widget widget-item">
+                $query = new WP_Query($query_args);
 
-              <h3 class="widget-title">Categories</h3>
-              <ul class="mt-3">
-                <li><a href="#">General <span>(25)</span></a></li>
-                <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                <li><a href="#">Travel <span>(5)</span></a></li>
-                <li><a href="#">Design <span>(22)</span></a></li>
-                <li><a href="#">Creative <span>(8)</span></a></li>
-                <li><a href="#">Educaion <span>(14)</span></a></li>
-              </ul>
-
-            </div> -->
-
-            <div class="recent-posts-widget widget-item">
-
-              <h3 class="widget-title">پست های پربازدید</h3>
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
-              </div>
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-2.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
-              </div>
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-3.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
-              </div>
-
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-4.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
-              </div>
-              <div class="post-item">
-                <img src="assets/img/blog/blog-recent-5.jpg" alt="" class="flex-shrink-0">
-                <div>
-                  <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
+                if ($query->have_posts()) {
+                    while ($query->have_posts()) {
+                        $query->the_post();
+                        $post_date = get_post_meta(get_the_ID(), 'date', true); // دریافت تاریخ از کاستوم فیلد
+                        ?>
+                        <div class="post-item">
+                          <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" alt="<?php the_title(); ?>" class="flex-shrink-0" style="padding-left: 1rem;width:95px">
+                          <div>
+                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                            <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo convert_gregorian_to_persian(get_the_date('Y-m-d')); ?></time>
+                          </div>
+                        </div>
+                        <?php
+                    }
+                    wp_reset_postdata();
+                } else {
+                    echo '<p>پستی یافت نشد.</p>';
+                }
+                ?>
               </div>
             </div>
-
-            <!-- <div class="tags-widget widget-item">
-
-              <h3 class="widget-title">Tags</h3>
-              <ul>
-                <li><a href="#">App</a></li>
-                <li><a href="#">IT</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Mac</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Creative</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Smart</a></li>
-                <li><a href="#">Tips</a></li>
-                <li><a href="#">Marketing</a></li>
-              </ul>
-
-            </div> -->
-
           </div>
 
-        </div>
 
       </div>
     </div>
