@@ -17,7 +17,7 @@
               <p>آموزش کاربردی استفاده از ابزارهای هوش مصنوعی در تولید محتوا.</p>
               <a href="#" class="read-more stretched-link"><span>جزییات بیشتر</span> <i class="bi bi-arrow-left"></i></a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
@@ -44,7 +44,7 @@
               <p>برگزاری دوره تخصصی کارآفرینی با محوریت هوش مصنوعی.</p>
               <a href="#" class="read-more stretched-link"><span>جزییات بیشتر</span> <i class="bi bi-arrow-left"></i></a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item item-indigo position-relative">
@@ -68,4 +68,4 @@
 
       </div>
 
-    </section>
+</section>

@@ -14,7 +14,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="index.php">صفحه اصلی</a></li>
             <li class="current">شرایط عضویت</li>
           </ol>
         </div>

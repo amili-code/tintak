@@ -176,6 +176,7 @@
 </script> -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    window.location.hash = `#step1`;
   // تابعی برای تغییر محتوای صفحه با توجه به هَش
   function updateContentFromHash() {
     const hash = window.location.hash || '#step1'; 

@@ -2,12 +2,31 @@
 $inDir = get_template_directory_uri();
 ?>
 
+<div class="page-title">
+    <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+                <br>
+            <h1>تیم های تینتک</h1>
+            <p class="mb-0">با اعضا و مهارت های افراد تینتک اشنا بشین.</p>
+            </div>
+         </div>
+        </div>
+     </div>
+    <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="index.php">صفحه اصلی</a></li>
+        <li class="current">تیم ها</li>
+      </ol>
+    </div>
+  </nav>
+</div>
 <section id="team" class="team section" style="display: block;">
-                <br>
-                <br>
-                <br>
                 <!-- Section Title -->
                 <div class="container section-title" data-aos="fade-up">
+                 
                     <h2>تیم های فعال در تینتک</h2>
                     <p>تیم مدیریت</p>
                 </div><!-- End Section Title -->

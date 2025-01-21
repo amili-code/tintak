@@ -39,7 +39,7 @@ $inDir = get_template_directory_uri();
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.php" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="<?=$inDir?>/assets/img/logo.png" alt="">
         <h1 class="sitename">تینتک</h1>
@@ -62,7 +62,7 @@ $inDir = get_template_directory_uri();
 
 
 
-      <a class="btn-getstarted flex-md-shrink-0" href="index.html#contact">همین الان شروع کن</a>
+      <a class="btn-getstarted flex-md-shrink-0" href="">همین الان شروع کن</a>
 
     </div>
   </header>

@@ -218,12 +218,12 @@
           <div class="col-lg-4 sidebar">
             <div class="widgets-container">
               <div class="search-widget widget-item">
-
+<!-- 
               <h3 class="widget-title">جستجو</h3>
               <form action="">
                 <input type="text">
                 <button type="submit" title="Search" style="right:85%"><i class="bi bi-search"></i></button>
-              </form>
+              </form> -->
 
             </div>
               <div class="recent-posts-widget widget-item">
