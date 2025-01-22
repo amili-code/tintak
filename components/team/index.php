@@ -416,16 +416,16 @@ $inDir = get_template_directory_uri();
                                     <p>رضا اسحاقی در زمینه ی طراحی لوگو و لوگوموشن کلی حرف برای گفتن داره و یکی از بچه های با استعداد این زمینه است.</p>
                                 </div>
                             </div>
-                        </div><!-- End Team Member -->
+                        </div>
                     </div>
 
-                      <br>
+                    <!-- <br>
                     <br>
                     <hr>
                     <br>
                      <div class="container section-title" data-aos="fade-up">
                        <p>تیم تولید محتوا ی دو</p>
-                    </div><!-- End Section Title -->
+                    </div>
 
                     <div class="row gy-3">
 
@@ -452,7 +452,7 @@ $inDir = get_template_directory_uri();
                                     <p>علی زنجانی یکی از بچه های بسیار با استعداد هست و مدیر تیم تولید محتوای دو هست</p>
                                 </div>
                             </div>
-                        </div><!-- End Team Member -->
+                        </div>
 
                         <div
                             class="col-lg-4 col-md-6 d-flex align-items-stretch"
@@ -479,7 +479,7 @@ $inDir = get_template_directory_uri();
                                     <p>یکی از بچه های با استعداد تیم در زمینه ی ادیت ویدیوی و عکس که مهارت بسیار بالایی هم در این زمینه دارد </p>
                                 </div>
                             </div>
-                        </div><!-- End Team Member -->
+                        </div>
 
                         
 
@@ -507,8 +507,8 @@ $inDir = get_template_directory_uri();
                                     <p>ادیتور ویدیو با کلی جلوه و افکت خفن و تر و تمیز که سطج یک ویدیو رو چند لول بالاتر می برد.</p>
                                 </div>
                             </div>
-                        </div><!-- End Team Member -->
-                    </div>
+                        </div>
+                    </div> -->
                 </div>
 
             </section>
